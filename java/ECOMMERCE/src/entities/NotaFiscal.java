@@ -5,13 +5,13 @@ public class NotaFiscal {
 	public String notaFiscal (double valorTotal, double imposto, char op, double pagamento) {
 		String modoPagamento="";
 		if (op=='1') {
-			modoPagamento="O pagamento teve um desconto de 10%";
+			modoPagamento=" O pagamento teve um desconto de 10% ";
 		}
 		else if (op=='2') {
-			modoPagamento="O pagamento teve um aumento de 10%";
+			modoPagamento=" O pagamento teve um aumento de 10% ";
 		}
 		else if (op=='3') {
-			modoPagamento="O pagamento teve um aumento de 15% parcelado em duas vezes de: ";
+			modoPagamento=" O pagamento teve um aumento de 15% parcelado em duas vezes de: ";
 		}
 		return "*******************************************************\n" 
 				+ "*******************************************************\n"
@@ -20,7 +20,7 @@ public class NotaFiscal {
 				+ "*******************************************************\n"
 				+ "VALOR DA COMPRA: "+valorTotal
 				+ "VALOR EM IMPOSTOS: "+imposto
-				+ modoPagamento + pagamento;
+				+ modoPagamento + String.format("%.2f", pagamento);
 		
 	}
 	
