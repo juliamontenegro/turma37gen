@@ -21,7 +21,7 @@ USE `db_blog_pessoal` ;
 -- Table `db_blog_pessoal`.`Temas`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `db_blog_pessoal`.`Temas` (
-  `id_tema` INT NULL AUTO_INCREMENT,
+  `id_tema` BIGINT NOT NULL AUTO_INCREMENT,
   `descricao` VARCHAR(255) NOT NULL,
   PRIMARY KEY (`id_tema`))
 ENGINE = InnoDB;
@@ -31,8 +31,8 @@ ENGINE = InnoDB;
 -- Table `db_blog_pessoal`.`Usuarios`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `db_blog_pessoal`.`Usuarios` (
-  `id_personagem` BIGINT NULL AUTO_INCREMENT,
-  `titulo` VARCHAR(255) BINARY NOT NULL,
+  `id_personagem` BIGINT NOT NULL AUTO_INCREMENT,
+  `titulo` VARCHAR(255) NOT NULL,
   `texto` VARCHAR(1000) NOT NULL,
   `data` TIMESTAMP NOT NULL,
   PRIMARY KEY (`id_personagem`))
