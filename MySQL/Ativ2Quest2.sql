@@ -44,4 +44,4 @@ select * from tb_pizza where sabor like 'c%' ;
 
 select * from tb_categoria inner join tb_pizza on tb_pizza.fk_id_pizza = tb_categoria.id_categoria ; 
 
-select * from tb_categoria inner join tb_pizza on tb_pizza.fk_id_pizza = tb_categoria.id_categoria where id_categoria = 1 ;
+postagemselect * from tb_categoria inner join tb_pizza on tb_pizza.fk_id_pizza = tb_categoria.id_categoria where id_categoria = 1 ;
